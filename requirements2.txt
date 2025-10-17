@@ -1,9 +1,5 @@
 streamlit>=1.36.0
-torch>=2.1.0
-torchvision>=0.16.1
-deepface>=0.0.90
-opencv-python-headless>=4.8.1
 numpy>=1.24.0
 Pillow>=10.0.0
+fer>=23.1.0
 rembg>=2.2.0
-
