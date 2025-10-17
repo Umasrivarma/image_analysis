@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import random
 
-st.title("🌟 Facial Analysis (Cloud-Compatible)")
+st.title("🌟 image Analysis")
 
 # Upload image
 uploaded_file = st.file_uploader("Upload a face image", type=["jpg", "jpeg", "png"])
@@ -40,3 +40,4 @@ if uploaded_file:
     # Predicted Emotion
     emotion_pred = map_emotion(center_crop)
     st.write(f"Predicted Emotion: {emotion_pred}")
+
