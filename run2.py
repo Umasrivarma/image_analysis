@@ -4,6 +4,13 @@ import numpy as np
 from fer import FER
 from rembg import remove
 
+
+try:
+    from fer import FER
+    st.success("FER installed successfully!")
+except ModuleNotFoundError as e:
+    st.error(f"FER not installed: {e}")
+
 st.set_page_config(page_title="Cloud Facial Analysis", layout="centered")
 st.title("👤 Facial Analysis (Streamlit Cloud Version)")
 
@@ -44,3 +51,4 @@ if uploaded_file:
 
     except Exception as e:
         st.error(f"Error processing image: {e}")
+
